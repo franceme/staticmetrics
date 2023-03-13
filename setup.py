@@ -14,7 +14,7 @@ GH_NAME = "franceme"
 URL = f"https://github.com/{GH_NAME}/{NAME}"
 long_description = pathlib.Path(f"{here}/README.md").read_text(encoding='utf-8')
 REQUIRES_PYTHON = '>=3.8.0'
-VERSION = "0.0.1"
+VERSION = "0.0.2"
 RELEASE = "?"
 entry_point = f"src.{NAME}"
 
@@ -40,7 +40,7 @@ setup(
     install_requires=[
         "setuptools==51.1.2",
         "radon==4.3.2",
-        "openpyxl==3.0.8",
+        "openpyxl",
         "pandas==1.1.0"
     ],
     include_package_data=True,
